@@ -24,13 +24,58 @@ class Welcome extends MY_Controller
 	public function __construct()
 	{
 		parent::__construct();
-		$this->template->set_layout('welcome_layout');
+		
+		$this->template->set_layout('bootstrap_navbar_layout');
 	}
 
 	public function index()
 	{
+		$this->template->set_layout('bootstrap_layout');
 		//$this->load->view('welcome_message');
 		$data['dari_controller'] = 'hello world dari controller';
 		$this->template->set_content('welcome/index', $data)->render();
+	}
+
+	public function agenda()
+	{
+
+		//$this->load->view('welcome_message');
+		$data['dari_controller'] = 'hello world dari controller';
+		$this->template->set_content('welcome/agenda', $data)->render();
+	}
+
+	public function beranda_arsip()
+	{
+		//$this->load->view('welcome_message');
+		$data['dari_controller'] = 'hello world dari controller';
+		$this->template->set_content('welcome/beranda_arsip', $data)->render();
+	}
+
+	public function beranda_dikerjakan()
+	{
+		//$this->load->view('welcome_message');
+		$data['dari_controller'] = 'hello world dari controller';
+		$this->template->set_content('welcome/beranda_dikerjakan', $data)->render();
+	}
+
+	public function beranda_pending()
+	{
+		//$this->load->view('welcome_message');
+		$data['dari_controller'] = 'hello world dari controller';
+		$this->template->set_content('welcome/beranda_pending', $data)->render();
+	}
+
+	public function beranda_selesai()
+	{
+		//$this->load->view('welcome_message');
+		$data['dari_controller'] = 'hello world dari controller';
+		$this->template->set_content('welcome/beranda_selesai', $data)->render();
+	}
+
+	public function register()
+	{
+		//$this->load->view('welcome_message');
+		$data['dari_controller'] = 'hello world dari controller';
+		$this->template->set_content('welcome/register', $data)->render();
 	}
 }
