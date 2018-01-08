@@ -41,7 +41,9 @@ class Template
 	}
 	public function render($custom=array())
 	{
-		
+		if (is_object($custom)) {
+			$custom = (array) $custom;
+		}
 		$data['me'] 		= $this->ci->router->fetch_class();
 		$data['content'] 	= $this->content;
 		$data['alert']		= $this->ci->session->flashdata('alert'); 

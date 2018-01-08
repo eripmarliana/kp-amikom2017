@@ -31,9 +31,8 @@ class Migration_Install_issue_checklist	 extends CI_Migration {
 				'null' => TRUE
 			),
 			'item_checklist' => array(
-				'type'           => 'MEDIUMINT',
-				'unsigned'       => TRUE,
-				'constraint'     => '8',
+				'type'           => 'VARCHAR',
+				'constraint'     => '125',
 				'null' => TRUE
 			),
 			'deskripsi_checklist' => array(

@@ -1,7 +1,7 @@
 <div class= "row justify-content-center">
 			<div class="col-12 col-md-6">
 				<div class="text-center" style="padding-top: 35px;">
-			<img src="assets/img/logo_TV_2015.png" style="width: 150px;height:150px" >
+			<img src="<?php echo base_url();?>assets/img/logo_TV_2015.png" style="width: 150px;height:150px" >
 				</div>
 				
 				
